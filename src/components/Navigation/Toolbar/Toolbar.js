@@ -5,11 +5,13 @@ import NavigationItems from '../NavigationItems/NavigationItems';
 
 import classes from './Toolbar.module.css';
 
-const toolbar = (props) => (
+const toolbar = () => (
   <header className={classes.toolbar}>
     <div>MENU</div>
-    <Logo />
-    <nav>
+    <div className={classes.logo}>
+      <Logo />
+    </div>
+    <nav className={classes['desktop-only']}>
       <NavigationItems />
     </nav>
   </header>
