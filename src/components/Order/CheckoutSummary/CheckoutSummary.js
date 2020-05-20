@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 import Burger from '../../Burger/Burger';
 import Button from '../../UI/Button/Button';
@@ -14,12 +15,12 @@ const checkoutSummary = (props) => {
       </div>
       <Button
         buttonType='danger'
-        clicked>CANCEL</Button>
+        clicked={props.canceled}>CANCEL</Button>
       <Button
         buttonType='success'
-        clicked>CONTINUE</Button>
+        clicked={props.continued}>CONTINUE</Button>
     </div>
   )
 }
 
-export default checkoutSummary;
+export default withRouter(checkoutSummary);

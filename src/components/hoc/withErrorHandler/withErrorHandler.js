@@ -25,7 +25,7 @@ const withErrorHandler = (WrappedComponent, Axios) => {
     // Need cleanup because the class is created every time, and the interceptors are created too. So, everytime it's created, the old interceptor still on the memory
     componentWillUnmount() {
       Axios.interceptors.request.eject(this.reqInterceptors);
-      Axios.interceptors.reponse.eject(this.resInterceptors);
+      Axios.interceptors.response.eject(this.resInterceptors);
     }
 
     errorConfirmedHandler = () => {
