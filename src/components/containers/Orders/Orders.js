@@ -4,8 +4,6 @@ import Axios from '../../../axios-orders';
 import Order from '../../Order/Order';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 
-import classes from './Orders.module.css';
-
 class Orders extends Component {
   state = {
     loading: true,

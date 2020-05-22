@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import BurgerBuilder from './components/containers/BurgerBuilder/BurgerBuilder';
 import Checkout from './components/containers/Checkout/Checkout';
